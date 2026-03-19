@@ -213,6 +213,11 @@ Here's the breakdown of the highest-paid and most in-demand skills for data anal
 
 Two separate bar graphs visualizing the highest paid skills and most in-demand skills for data analysts in the US
 
+* Top-paying skills are heavily cloud and big data focused, with tools like Looker, Redshift, Snowflake, and Hadoop leading salaries well above $110K, while traditional programming skills like JavaScript are slightly lower.
+
+* High-demand skills are more general-purpose and widely used, including Snowflake, Spark, Python, SQL, and Excel, clustering around the ~$95K–$120K range.
+
+* There is a gap between demand and pay for some tools—for example, Excel and SQL are highly in demand but not top-paying, whereas specialized tools like Looker and Redshift command higher salaries but are less broadly listed among the most in-demand skills.
 
 
 ### Insights
