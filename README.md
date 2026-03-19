@@ -263,7 +263,7 @@ plt.show()
 ```
 
 ### Results
-![Most%20Optimal%20Skills%20for%20Data%20Analysts%20in%20Canada%20Technology.png]
+![](Most%20Optimal%20Skills%20for%20Data%20Analysts%20in%20Canada%20Technology.png)
 
 
 ### Insights
