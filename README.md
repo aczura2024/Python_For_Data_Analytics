@@ -242,6 +242,12 @@ A scatter plot visualizing the most optimal skills (high paying & high demand) f
 
 ### Insights
 
+* High‑salary skills like Looker and Snowflake offer strong pay but appear in relatively few job postings.
+
+* Widely demanded skills such as Python and SQL dominate the market yet correspond to more moderate median salaries.
+
+* Cloud and big‑data tools (AWS, GCP, Spark, Hadoop) cluster in the mid‑range for both demand and salary, showing balanced but not standout advantages.
+
 ## Visualizing Different Technologies
 
 ### Visualize Data
