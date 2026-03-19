@@ -263,10 +263,15 @@ plt.show()
 ```
 
 ### Results
-![](Most%20Optimal%20Skills%20for%20Data%20Analysts%20in%20Canada%20Technology.png)
-
+![](Most%20Optimal%20Skills%20for%20Data%20Analysts%20in%20Canada%20Technology.png) A scatterplot visualizing the most optimal skills (high paying & high demand) for data analysts in Canada with colour labels for technology. 
 
 ### Insights
+* High‑salary but low‑prevalence skills (e.g., Looker, Snowflake) sit at the top of the chart, offering strong pay but fewer job postings.
+
+* Core programming and analyst tools like Python, SQL, and Excel dominate job demand but correspond to more moderate median salaries.
+
+* Cloud and big‑data technologies (AWS, GCP, Spark, Hadoop) cluster in the mid‑range, offering balanced demand and compensation without extreme trade‑offs.
+
 
 # What I Learned
 
