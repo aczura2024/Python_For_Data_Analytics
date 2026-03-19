@@ -143,17 +143,44 @@ for i in range(5):
 ```
 ### Results
 ![](Trending%20Top%20Skills%20for%20Data%20Analyst%20in%20Canada.png)
+
 Bar graph visualizing the trending top skills for data analysts in Canada in 2023.
 
 
 
 ### Insights
+* We see that demand for SQL remained consistently high throughout the year, staying at over 50% in job postings.
+* We wee that the demand for Excel spikes around may, then drops over the rest of the year.
+* Python remains steady around 40% throughout the year. 
+* Tableau and Power BI tend to be in relatively lower demand. 
+
+
 
 ## 3. How well do jobs and skills pay for Data Analysts?
+To identify the highest-paying roles and skills, I only got jobs in Canada and examined their median salary. First, I looked at the salary distributions of common data jobs like Data Scientist, Data Engineer and Data Analyst, to see which job tends to pay the most. 
+
+View the notebook with detailed code steps here: [4_Salary_Analysis](4_Salary_Analysis.ipynb).
 
 ### Visualize Data
 
+```python
+sns.boxplot(data=df_Canada_top6,x='salary_year_avg',y='job_title_short',order=job_order)
+sns.set_theme(style='ticks')
+
+# this is all the same
+plt.title('Salary Distributions of Data Jobs in Canada')
+plt.xlabel('Yearly Salary (USD)')
+plt.ylabel('')
+plt.xlim(0,600000)
+ticks_x = plt.FuncFormatter(lambda y, pos: f'${int(y/1000)}K')
+plt.gca().xaxis.set_major_formatter(ticks_x)
+plt.show()
+```
+
+
 ### Results
+![](Salary%20Distributions%20of%20Data%20Jobs%20in%20Canada.png)
+
 
 ### Insights
 
