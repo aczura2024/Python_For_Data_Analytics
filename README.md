@@ -237,7 +237,6 @@ plt.show()
 
 ### Results
 ![](Most%20Optimal%20Skills%20for%20Data%20Analysts%20in%20Canada.png)
-
 A scatter plot visualizing the most optimal skills (high paying & high demand) for data analysts in Canada.
 
 ### Insights
