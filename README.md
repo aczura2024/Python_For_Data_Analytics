@@ -102,3 +102,49 @@ To find how skills are trending in 2023 for Data Analysts, I filtered data analy
 
 View the code I used with detailed steps here: [3_Skills_Trend](3_Skills_Trend.ipynb)
 
+### Visualize Data
+
+### Results
+
+### Insights
+
+## 3. How well do jobs and skills pay for Data Analysts?
+
+### Visualize Data
+
+### Results
+
+### Insights
+
+## Highest Paid & Mosted Demanded Skills for Data Analysts
+
+### Visualize Data
+
+### Results
+
+### Insights
+
+## 4. What are the most optimal skills to learn for Data Analysts?
+
+### Visualize Data
+
+### Results
+
+### Insights
+
+## Visualizing Different Technologies
+
+### Visualize Data
+
+### Results
+
+### Insights
+
+# What I Learned
+
+# Insights
+
+# Challenges I Faced
+
+# Conclusion
+
