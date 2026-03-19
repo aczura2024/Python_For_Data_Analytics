@@ -183,12 +183,37 @@ plt.show()
 
 
 ### Insights
+* Machine learning engineers have the highest median salary at almost $150K USD per year.
+* Data Analysts have the lowest median salary at just below $100K USD per year.
+* Median salaries are fairly equal for Senior Data Engineers, Software Engineers and Data Scientists.
 
 ## Highest Paid & Mosted Demanded Skills for Data Analysts
+Next, I zoomed in to focus my analysis only on data analyst roles. I investigated highest-paid skills and the most in-demand skills. I used two bar charts to showcase these. 
+
 
 ### Visualize Data
 
+```python
+
+fig, ax = plt.subplots(2, 1)  
+
+# Top 10 Highest Paid Skills for Data Analysts
+sns.barplot(data=df_DA_top_pay, x='median', y=df_DA_top_pay.index, hue='median', ax=ax[0], palette='dark:b_r')
+ax[0].legend().remove()
+
+# Top 10 Most In-Demand Skills for Data Analysts')
+sns.barplot(data=df_DA_skills, x='median', y=df_DA_skills.index, hue='median', ax=ax[1], palette='light:b')
+ax[1].legend().remove()
+plt.show()
+```
+
 ### Results
+Here's the breakdown of the highest-paid and most in-demand skills for data analysts in the US:
+![](Highest%20Paid%20Skills%20for%20Data%20Analysts%20in%20Canada.png)
+
+Two separate bar graphs visualizing the highest paid skills and most in-demand skills for data analysts in the US
+
+
 
 ### Insights
 
