@@ -276,8 +276,18 @@ plt.show()
 
 
 # What I Learned
+Throughout this project, I deepended my understanding of the data analyst job market and leveled up my Python coding skills, especially in data manipulation and visualization. Here are some of the specific things I learned:
+* **Advanced Python Usage**: Utilizing libraries such as Pandas for manipulation, Seaborn and Matplotlib for data visualization, and other libraries helped me perform complex data analysis tasks more efficiently.
+* **Data Cleaning Importance**: I learned that thorough data cleaning and processing are essential before any analysis can be conducted, ensuring the accuracy of insights derived from the data.
+* **Strategic Skills**: The project emphasized the importance of aligning my skills with market demand. Understanding the relationship between skill demand, salary, and job availability allows for more strategic career planning in the tech industry. 
+
 
 # Insights
+This project provided some general insights into the data job market for analysts:
+* **Skill Demand and Salary Correlation**: There is a strong connection between the demand for specific skills and the salaries these skills command. More advanced and specialized skills such as Python and Oracle often lead to higher salaries.
+* **Market Trends**: There are changing trends in skill demand, underscoring the fluid nature of the data job market. Keeping up with these trends is essential for career growth in data analytics.
+* **Economic Value of Skills** Understanding which skills are both in-demand and well-compensated can guide data analysts in prioritizing learning to maximize their economic returns. 
+
 
 # Challenges I Faced
 This project presented some challenges with provided some useful learning opportunities:
