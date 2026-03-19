@@ -91,4 +91,7 @@ plt.show()
 ```
 ## Results
 ![Likelihood of Skills Requested in Canada Job Postings](Likelihood%20of%20Skills%20Requested%20in%20Canada%20Job%20Postings.png)
+
 *Bar Graph visualizing the salary for the top 3 data roles and their top 5 skills associated with each*
+
+## Insights
