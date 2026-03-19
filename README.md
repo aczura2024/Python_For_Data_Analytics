@@ -33,5 +33,34 @@ This section outlines the steps I took to prepare the data for analysis, ensurin
 I begin my importing the necessary libraries and loading the dataset, followed by some data cleaning tasks to ensure data quality. 
 
 
+```python
+# Importing Libraries
+import ast
+import pandas as pd
+import seaborn as sns
+from datasets import load_dataset
+import matplotlib.pyplot as plt
 
+#Loading Data
+dataset = load_dataset('lukebarousse/data_jobs')
+df = dataset['train'].to_pandas()
 
+#Data Cleanup
+df['job_posted_date'] = pd.to_datetime(df['job_posted_date'])
+df['job_skills'] = df['job_skills'].apply(lambda x: ast.literal_eval(x) if pd.notna(x) else x)
+```
+
+## Filter Canada Jobs
+Since I am interested in job postings in the Canadian job market, I apply filters to the dataset where I only select roles in Canada.
+
+```python
+df_Canada = df[df['job_country'] == 'Canada']
+```
+# The Analysis
+Each Jupyter notebook for this project was targeted at investigating a different aspects of the data job market. Below is how I approached each question:
+
+## 1. What are the most demanded skills for the top 3 most popular data roles?
+
+To find the most demanded skills for the top 3 most popular data roles, I filtered out these positions by which ones appeared most popular, and got the top 5 skills for each role. This query highlights the most popular job titles and their top skills, showing which skills I should pay attention to depending on the role I am targeting. 
+
+The code with detailed steps is featured here: [Skills Count Analysis](2_Skills_Count.ipynb)
