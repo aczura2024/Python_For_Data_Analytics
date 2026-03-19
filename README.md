@@ -143,6 +143,8 @@ for i in range(5):
 ```
 ### Results
 ![](Trending%20Top%20Skills%20for%20Data%20Analyst%20in%20Canada.png)
+Bar graph visualizing the trending top skills for data analysts in Canada in 2023.
+
 
 
 ### Insights
