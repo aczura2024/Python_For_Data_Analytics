@@ -96,6 +96,12 @@ plt.show()
 
 ## Insights
 
+* I see that SQL is highly valued for data analysts, data engineers and senior data engineers.
+* Excel is the second most popular for data analysts, but not listed for data engineers.
+* Python is in high demand especially for data engineers (61%), but only 32% for data analysts.
+* Data engineers are required to have more specialized skills (such as AWS, Azure, Spark) whereas data analysts are expected to be proficient in more general data management tools (Excel, Tableau). 
+
+
 ## 2. How are in-demand skills trending for Data Analysts?
 
 To find how skills are trending in 2023 for Data Analysts, I filtered data analyst positions and grouped the skills by the month of each job posting. This got me the top 5 skills of data analysts by month, showing how popular skills were throughout 2023.
@@ -104,7 +110,40 @@ View the code I used with detailed steps here: [3_Skills_Trend](3_Skills_Trend.i
 
 ### Visualize Data
 
+```python
+df_plot = df_DA_Canada_percent.iloc[:,:5] #select the top 5 skills
+
+sns.lineplot(data=df_plot,dashes=False,palette='tab10') #generate the line plot
+sns.set_theme(style='ticks')
+sns.despine()
+
+
+#specify settings
+plt.title('Trending Top Skills for Data Analysts in Canada')
+plt.ylabel('Likelihood in Job Posting')
+plt.xlabel('2023')
+plt.legend().remove()
+
+from matplotlib.ticker import PercentFormatter
+ax = plt.gca()
+ax.yaxis.set_major_formatter(PercentFormatter(decimals=0))
+
+
+#code to ensure line labels are not close together
+offsets = [0.5, 2, 1, -1, 0]   # tweak these as needed
+
+for i in range(5):
+    plt.text(
+        11.2,
+        df_plot.iloc[-1, i] + offsets[i],
+        df_plot.columns[i],
+        va='center'
+    )
+
+```
 ### Results
+![](Trending%20Top%20Skills%20for%20Data%20Analyst%20in%20Canada.png)
+
 
 ### Insights
 
