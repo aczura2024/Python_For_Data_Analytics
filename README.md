@@ -63,4 +63,19 @@ Each Jupyter notebook for this project was targeted at investigating a different
 
 To find the most demanded skills for the top 3 most popular data roles, I filtered out these positions by which ones appeared most popular, and got the top 5 skills for each role. This query highlights the most popular job titles and their top skills, showing which skills I should pay attention to depending on the role I am targeting. 
 
-The code with detailed steps is featured here: [Skills Count Analysis](2_Skills_Count.ipynb)
+The code with detailed steps is featured here: [2_Skills_Count](2_Skills_Count.ipynb)
+
+```python
+fig, ax = plt.subplots(len(job_titles),1)
+
+for i, job_title in enumerate(job_titles):
+    df_plot = df_skills_count[df_skills_count['job_title_short'] == job_title].head(5)
+    df_plot.plot(kind='barh',x='job_skills',y='skill_count',ax=ax[i],title=job_title)
+    ax[i].invert_yaxis()
+    ax[i].set_ylabel('')
+    ax[i].legend().set_visible(False)
+
+fig.suptitle('Counts of Top Skills in Job Postings',fontsize=15)
+fig.tight_layout(h_pad=0.5) #fix the overlap
+plt.show()
+```
