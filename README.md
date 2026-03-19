@@ -144,7 +144,7 @@ for i in range(5):
 ### Results
 ![](Trending%20Top%20Skills%20for%20Data%20Analyst%20in%20Canada.png)
 
-Bar graph visualizing the trending top skills for data analysts in Canada in 2023.
+*Bar graph visualizing the trending top skills for data analysts in Canada in 2023.*
 
 
 
@@ -208,10 +208,10 @@ plt.show()
 ```
 
 ### Results
-Here's the breakdown of the highest-paid and most in-demand skills for data analysts in the US:
+Here's the breakdown of the highest-paid and most in-demand skills for data analysts in Canada:
 ![](Highest%20Paid%20Skills%20for%20Data%20Analysts%20in%20Canada.png)
 
-Two separate bar graphs visualizing the highest paid skills and most in-demand skills for data analysts in the US
+*Two separate bar graphs visualizing the highest paid skills and most in-demand skills for data analysts in Canada*
 
 ### Insights
 * Top-paying skills are heavily cloud and big data focused, with tools like Looker, Redshift, Snowflake, and Hadoop leading salaries well above $110K, while traditional programming skills like JavaScript are slightly lower.
@@ -237,7 +237,7 @@ plt.show()
 
 ### Results
 ![](Most%20Optimal%20Skills%20for%20Data%20Analysts%20in%20Canada.png)
-A scatter plot visualizing the most optimal skills (high paying & high demand) for data analysts in Canada.
+*A scatter plot visualizing the most optimal skills (high paying & high demand) for data analysts in Canada.*
 
 ### Insights
 
@@ -265,7 +265,7 @@ plt.show()
 ### Results
 ![](Most%20Optimal%20Skills%20for%20Data%20Analysts%20in%20Canada%20Technology.png) 
 
-A scatterplot visualizing the most optimal skills (high paying & high demand) for data analysts in Canada with colour labels for technology. 
+*A scatterplot visualizing the most optimal skills (high paying & high demand) for data analysts in Canada with colour labels for technology.*
 
 ### Insights
 * High‑salary but low‑prevalence skills (e.g., Looker, Snowflake) sit at the top of the chart, offering strong pay but fewer job postings.
