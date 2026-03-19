@@ -68,14 +68,24 @@ The code with detailed steps is featured here: [2_Skills_Count](2_Skills_Count.i
 ```python
 fig, ax = plt.subplots(len(job_titles),1)
 
-for i, job_title in enumerate(job_titles):
-    df_plot = df_skills_count[df_skills_count['job_title_short'] == job_title].head(5)
-    df_plot.plot(kind='barh',x='job_skills',y='skill_count',ax=ax[i],title=job_title)
-    ax[i].invert_yaxis()
-    ax[i].set_ylabel('')
-    ax[i].legend().set_visible(False)
+sns.set_theme(style='ticks')
 
-fig.suptitle('Counts of Top Skills in Job Postings',fontsize=15)
-fig.tight_layout(h_pad=0.5) #fix the overlap
+for i, job_title in enumerate(job_titles):
+    df_plot = df_skills_perc[df_skills_perc['job_title_short'] == job_title].head(5)
+    #df_plot.plot(kind='barh',x='job_skills',y='skill_percent',ax=ax[i],title=job_title)
+    sns.barplot(data=df_plot,x='skill_percent',y='job_skills',ax=ax[i],hue='skill_count',palette='dark:b_r')
+    ax[i].set_title(job_title)
+    ax[i].set_ylabel('')
+    ax[i].set_xlabel('')
+    ax[i].get_legend().remove()
+    ax[i].set_xlim(0,78)
+
+    for n, v in enumerate(df_plot['skill_percent']):
+        ax[i].text(v+1,n,f'{v:.0f}%',va='center') 
+    if i != len(job_titles)-1:    
+        ax[i].set_xticks([])
+
+fig.suptitle('Likelihood of Skills Requested in Canada Job Postings',fontsize=15)
+fig.tight_layout(h_pad=0.5)
 plt.show()
 ```
