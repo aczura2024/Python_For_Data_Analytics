@@ -89,3 +89,4 @@ fig.suptitle('Likelihood of Skills Requested in Canada Job Postings',fontsize=15
 fig.tight_layout(h_pad=0.5)
 plt.show()
 ```
+## Results
