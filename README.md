@@ -70,6 +70,7 @@ fig, ax = plt.subplots(len(job_titles),1)
 
 sns.set_theme(style='ticks')
 
+#creating a plot for each of the 3 most popular data roles and formatting them
 for i, job_title in enumerate(job_titles):
     df_plot = df_skills_perc[df_skills_perc['job_title_short'] == job_title].head(5)
     #df_plot.plot(kind='barh',x='job_skills',y='skill_percent',ax=ax[i],title=job_title)
@@ -85,6 +86,7 @@ for i, job_title in enumerate(job_titles):
     if i != len(job_titles)-1:    
         ax[i].set_xticks([])
 
+#adding a title for the entire figure and creating space between the subplots
 fig.suptitle('Likelihood of Skills Requested in Canada Job Postings',fontsize=15)
 fig.tight_layout(h_pad=0.5)
 plt.show()
