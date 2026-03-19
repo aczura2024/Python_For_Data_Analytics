@@ -251,7 +251,20 @@ A scatter plot visualizing the most optimal skills (high paying & high demand) f
 
 ### Visualize Data
 
+```python
+from matplotlib.ticker import PercentFormatter
+sns.scatterplot(
+    data=df_DA_skills_tech_high_demand,
+    x='skill_percent',
+    y='median_salary',
+    hue='technology'
+)
+plt.show()
+```
+
 ### Results
+![Most%20Optimal%20Skills%20for%20Data%20Analysts%20in%20Canada%20Technology.png]
+
 
 ### Insights
 
