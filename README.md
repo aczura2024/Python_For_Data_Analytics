@@ -222,6 +222,10 @@ Two separate bar graphs visualizing the highest paid skills and most in-demand s
 
 
 ## 4. What are the most optimal skills to learn for Data Analysts?
+To identify the most optimal skills to learn (the ones that are the highest paid and the highest in demand) I calculated the percent of skill demand and the median salary of these skills. To easily identify which are the most optimal skills to learn.
+
+View my notebook with the detailed code here: [5_Optimal_Skills](5_Optimal_Skills.ipynb)
+
 
 ### Visualize Data
 
